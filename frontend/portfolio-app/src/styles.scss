@@ -1,0 +1,166 @@
+/* ============================================================
+   Joyce Coem — Portfolio Design Tokens
+   Palette: near-black blue-slate base, teal accent, muted amber
+   for rare emphasis. Display: Space Grotesk. Body: Inter.
+   Utility/terminal accents: JetBrains Mono — a direct nod to
+   the CLI tools (curl, dig, traceroute) that are part of her
+   actual toolkit, not decoration for its own sake.
+   ============================================================ */
+
+:root {
+  --bg: #0B0F14;
+  --surface: #121822;
+  --surface-alt: #171F2B;
+  --border: #1F2A38;
+  --text-primary: #E8EDF2;
+  --text-secondary: #8B98A5;
+  --text-tertiary: #5C6B7A;
+  --accent: #2DD4BF;
+  --accent-dim: #1A8F82;
+  --accent-soft: rgba(45, 212, 191, 0.12);
+  --amber: #E0A458;
+
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --radius: 6px;
+  --max-width: 1080px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 0 0.5em;
+  letter-spacing: -0.01em;
+}
+
+h1 { font-size: clamp(2rem, 5vw, 3.2rem); }
+h2 { font-size: clamp(1.5rem, 3.5vw, 2.2rem); }
+h3 { font-size: 1.3rem; }
+
+p { margin: 0 0 1em; color: var(--text-secondary); }
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+a:hover { color: var(--text-primary); }
+
+/* Signature element: terminal-prompt section labels.
+   Encodes real content — these are literally the commands
+   her CV lists (cat, ls, grep) — not arbitrary decoration. */
+.term-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-dim);
+  border-radius: var(--radius);
+  padding: 0.3em 0.8em;
+  margin-bottom: 1em;
+}
+.term-label::before { content: '$'; opacity: 0.6; }
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section {
+  padding: 4.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+.card:hover {
+  border-color: var(--accent-dim);
+}
+
+.tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.2em 0.6em;
+  margin: 0 0.4em 0.4em 0;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.7em 1.5em;
+  border-radius: var(--radius);
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.btn:hover {
+  background: var(--accent);
+  color: var(--bg);
+}
+.btn--solid {
+  background: var(--accent);
+  color: var(--bg);
+}
+.btn--solid:hover {
+  background: var(--accent-dim);
+  border-color: var(--accent-dim);
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+.grid--2 { grid-template-columns: repeat(2, 1fr); }
+.grid--3 { grid-template-columns: repeat(3, 1fr); }
+
+@media (max-width: 768px) {
+  .grid--2, .grid--3 { grid-template-columns: 1fr; }
+  .section { padding: 3rem 0; }
+}
+
+/* Respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  html, body { scroll-behavior: auto; }
+  * { transition: none !important; animation: none !important; }
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}

@@ -1,0 +1,14 @@
+<section class="section">
+  <div class="container">
+    <span class="term-label">ls -la certifications/</span>
+    <h1>Certifications</h1>
+
+    <div class="grid grid--2">
+      <div class="card cert" *ngFor="let c of certifications">
+        <h3>{{ c.title }}</h3>
+        <p class="cert__issuer">{{ c.issuer }}</p>
+        <span class="tag" *ngIf="c.inProgress">In Progress</span>
+      </div>
+    </div>
+  </div>
+</section>

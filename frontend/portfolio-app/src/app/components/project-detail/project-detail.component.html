@@ -1,0 +1,43 @@
+<section class="section" *ngIf="project">
+  <div class="container project-detail">
+    <span class="term-label">cat projects/{{ project.slug }}.md</span>
+    <h1>{{ project.title }}</h1>
+    <p class="project-detail__subtitle">{{ project.subtitle }}</p>
+
+    <div class="project-detail__tags">
+      <span class="tag" *ngFor="let tech of techList(project.technologies)">{{ tech }}</span>
+    </div>
+
+    <div class="project-detail__links" *ngIf="project.gitHubUrl || project.demoUrl">
+      <a *ngIf="project.gitHubUrl" [href]="project.gitHubUrl" target="_blank" rel="noopener" class="btn">GitHub</a>
+      <a *ngIf="project.demoUrl" [href]="project.demoUrl" target="_blank" rel="noopener" class="btn btn--solid">Live Demo</a>
+    </div>
+
+    <h2>Problem</h2>
+    <p>{{ project.problem }}</p>
+
+    <h2>Solution</h2>
+    <p>{{ project.solution }}</p>
+
+    <h2>Architecture</h2>
+    <p>{{ project.architecture }}</p>
+
+    <h2>My Role</h2>
+    <p>{{ project.myRole }}</p>
+
+    <h2>Outcome</h2>
+    <p>{{ project.outcome }}</p>
+
+    <h2>Lessons Learned</h2>
+    <p>{{ project.lessonsLearned }}</p>
+
+    <a routerLink="/projects" class="btn">&larr; Back to all projects</a>
+  </div>
+</section>
+
+<section class="section" *ngIf="!project">
+  <div class="container">
+    <p>Project not found.</p>
+    <a routerLink="/projects" class="btn">&larr; Back to all projects</a>
+  </div>
+</section>

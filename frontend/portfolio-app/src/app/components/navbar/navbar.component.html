@@ -1,0 +1,19 @@
+<nav class="navbar">
+  <div class="container navbar__inner">
+    <a routerLink="/" class="navbar__brand" (click)="close()">
+      <span class="navbar__prompt">joyce@security:~$</span>
+    </a>
+
+    <button class="navbar__toggle" (click)="toggle()" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="navbar__links" [class.navbar__links--open]="isOpen">
+      <li *ngFor="let link of links">
+        <a [routerLink]="link.path" routerLinkActive="active" [routerLinkActiveOptions]="{exact: link.path === '/'}" (click)="close()">
+          {{ link.label }}
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>

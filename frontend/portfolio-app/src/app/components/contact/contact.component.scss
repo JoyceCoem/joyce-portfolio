@@ -1,0 +1,49 @@
+.contact { max-width: 600px; }
+
+.contact__channels {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+
+  label {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-top: 0.75rem;
+  }
+
+  input, textarea {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text-primary);
+    padding: 0.7rem;
+    font-family: var(--font-body);
+
+    &:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+  }
+
+  button {
+    margin-top: 1.5rem;
+    align-self: flex-start;
+  }
+}
+
+.contact__error {
+  color: var(--amber);
+  font-size: 0.9rem;
+}
+
+.contact__success {
+  color: var(--accent);
+  font-size: 1.05rem;
+}

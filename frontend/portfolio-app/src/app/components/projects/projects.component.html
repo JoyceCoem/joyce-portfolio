@@ -1,0 +1,17 @@
+<section class="section">
+  <div class="container">
+    <span class="term-label">ls projects/</span>
+    <h1>Projects</h1>
+    <p>A selection of solo builds, hackathon projects, and freelance work.</p>
+
+    <div class="grid grid--2 projects__grid">
+      <a class="card project-card" *ngFor="let project of projects" [routerLink]="['/projects', project.slug]">
+        <h3>{{ project.title }}</h3>
+        <p class="project-card__subtitle">{{ project.subtitle }}</p>
+        <div class="project-card__tags">
+          <span class="tag" *ngFor="let tech of techList(project.technologies)">{{ tech }}</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>

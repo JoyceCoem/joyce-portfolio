@@ -1,0 +1,77 @@
+<section class="section">
+  <div class="container cv">
+    <span class="term-label">curl -O cv.pdf</span>
+    <h1>CV</h1>
+
+    <div class="cv__actions">
+      <a href="/assets/Joyce_Coem_CV_Software.pdf" target="_blank" class="btn">View CV</a>
+      <a href="/assets/Joyce_Coem_CV_Software.pdf" download class="btn btn--solid">Download PDF</a>
+    </div>
+
+    <div class="cv__tabs">
+      <button class="cv__tab" [class.cv__tab--active]="activeTab === 'software'" (click)="setTab('software')">
+        Graduate Software Engineer
+      </button>
+      <button class="cv__tab" [class.cv__tab--active]="activeTab === 'support'" (click)="setTab('support')">
+        Technical Support Engineer
+      </button>
+    </div>
+
+    <!-- Graduate Software Engineer version -->
+    <div class="cv__body" *ngIf="activeTab === 'software'">
+      <h2>Profile</h2>
+      <p>
+        Final-year BSc IT student (Security &amp; Network Engineering) with a Higher Certificate in
+        Software Development, seeking to grow as a Graduate Software Engineer. Hands-on experience
+        building web applications using HTML, CSS, JavaScript, jQuery, and SQL, complemented by
+        academic exposure to C#/.NET, Angular, and ASP.NET Core. Passionate about clean code,
+        continuous learning, and delivering software that makes a real difference.
+      </p>
+
+      <h2>Technical Skills</h2>
+      <div class="cv__tags">
+        <span class="tag">HTML / CSS / JS</span><span class="tag">jQuery</span>
+        <span class="tag">C# / .NET</span><span class="tag">SQL</span>
+        <span class="tag">Angular</span><span class="tag">ASP.NET Core</span>
+        <span class="tag">Git / Version Control</span><span class="tag">Azure (Exposure)</span>
+      </div>
+
+      <h2>Education</h2>
+      <p><strong>BSc IT — Security &amp; Network Engineering</strong> — Eduvos, Cape Town (Feb 2025 – Present, final year)</p>
+      <p><strong>Higher Certificate in Software Development</strong> — Eduvos, Cape Town (Feb 2022 – Mar 2023)</p>
+
+      <h2>Experience</h2>
+      <p><strong>Employability &amp; Academics Member — SRC</strong> — Eduvos, Cape Town (Dec 2024 – Present)</p>
+      <p><strong>Receptionist</strong> — SOCEARUCO, Kinshasa, D.R. Congo (Jan 2020 – Apr 2021)</p>
+    </div>
+
+    <!-- Technical Support Engineer version -->
+    <div class="cv__body" *ngIf="activeTab === 'support'">
+      <h2>Profile</h2>
+      <p>
+        Final-year BSc IT student (Security &amp; Network Engineering) at Eduvos, with a Higher
+        Certificate in Software Development. Passionate about how the Internet works — from DNS
+        and SSL/TLS to HTTP and network layer protocols. Hands-on experience in Linux, scripting,
+        and building web applications. Eager to bring technical curiosity and strong communication
+        skills to a team helping build a better Internet.
+      </p>
+
+      <h2>Technical Skills</h2>
+      <div class="cv__tags">
+        <span class="tag">Linux / CLI</span><span class="tag">Python / Bash</span>
+        <span class="tag">JavaScript</span><span class="tag">HTML / CSS</span>
+        <span class="tag">DNS / SSL / HTTP</span><span class="tag">Git</span>
+        <span class="tag">SQL</span><span class="tag">Networking (OSI)</span>
+      </div>
+
+      <h2>Relevant Technical Knowledge</h2>
+      <p><strong>Networking &amp; Protocols:</strong> OSI model (Layers 3, 4 &amp; 7); DNS, SSL/TLS, HTTP/HTTPS, TCP/IP.</p>
+      <p><strong>Linux &amp; CLI Tools:</strong> curl, dig, traceroute, openssl, git for troubleshooting tasks.</p>
+      <p><strong>Web Servers:</strong> Awareness of Apache and Nginx; configured basic server environments academically.</p>
+
+      <h2>Experience</h2>
+      <p><strong>Employability &amp; Academics Member — SRC</strong> — Eduvos, Cape Town (Dec 2024 – Present)</p>
+      <p><strong>Receptionist</strong> — SOCEARUCO, Kinshasa, D.R. Congo (Jan 2020 – Apr 2021)</p>
+    </div>
+  </div>
+</section>

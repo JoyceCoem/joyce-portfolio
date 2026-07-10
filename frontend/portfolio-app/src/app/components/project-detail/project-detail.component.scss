@@ -1,0 +1,15 @@
+.project-detail {
+  max-width: 760px;
+}
+.project-detail__subtitle {
+  color: var(--accent);
+  font-size: 1.05rem;
+}
+.project-detail__tags {
+  margin-bottom: 1.5rem;
+}
+.project-detail__links {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}

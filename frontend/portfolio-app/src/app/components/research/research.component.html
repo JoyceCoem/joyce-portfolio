@@ -1,0 +1,27 @@
+<section class="section">
+  <div class="container research">
+    <span class="term-label">cat research/*.pdf</span>
+    <h1>Research</h1>
+
+    <article class="research__item" *ngFor="let r of research">
+      <h2>{{ r.title }}</h2>
+      <p class="research__context">{{ r.context }}</p>
+      <p class="research__supervisor" *ngIf="r.supervisor">Supervisor: {{ r.supervisor }}</p>
+
+      <h3>Abstract</h3>
+      <p>{{ r.abstract }}</p>
+
+      <h3>Objectives</h3>
+      <p>{{ r.objectives }}</p>
+
+      <h3>Methodology</h3>
+      <p>{{ r.methodology }}</p>
+
+      <h3>Technologies / Approach</h3>
+      <p>{{ r.technologies }}</p>
+
+      <h3>Key Findings</h3>
+      <p>{{ r.keyFindings }}</p>
+    </article>
+  </div>
+</section>

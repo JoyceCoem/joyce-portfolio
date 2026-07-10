@@ -1,0 +1,17 @@
+<section class="section">
+  <div class="container">
+    <span class="term-label">grep -r "won\|hosted\|shadowed" .</span>
+    <h1>Achievements</h1>
+
+    <div class="achievements__list">
+      <div class="card achievement" *ngFor="let a of achievements">
+        <div class="achievement__header">
+          <h3>{{ a.title }}</h3>
+          <span class="tag">{{ a.category }}</span>
+        </div>
+        <p>{{ a.description }}</p>
+        <p class="achievement__date" *ngIf="a.dateLabel">{{ a.dateLabel }}</p>
+      </div>
+    </div>
+  </div>
+</section>

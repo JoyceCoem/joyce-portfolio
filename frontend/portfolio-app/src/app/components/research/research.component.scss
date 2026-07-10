@@ -1,0 +1,20 @@
+.research {
+  max-width: 760px;
+}
+.research__item {
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid var(--border);
+}
+.research__item:last-child {
+  border-bottom: none;
+}
+.research__context {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+.research__supervisor {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--accent);
+}

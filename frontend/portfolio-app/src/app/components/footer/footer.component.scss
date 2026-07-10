@@ -1,0 +1,25 @@
+.footer {
+  padding: 3rem 0 2rem;
+  text-align: center;
+}
+.footer__text {
+  color: var(--text-primary);
+  font-weight: 600;
+  margin: 0.5em 0;
+}
+.footer__links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1rem 0;
+
+  a {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+  }
+  a:hover { color: var(--accent); }
+}
+.footer__copyright {
+  font-size: 0.8rem;
+  color: var(--text-tertiary);
+}

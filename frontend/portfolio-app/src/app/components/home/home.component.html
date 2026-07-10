@@ -1,0 +1,33 @@
+<section class="hero section">
+  <div class="container hero__inner">
+    <div class="hero__content">
+      <span class="term-label">whoami</span>
+      <h1>Hi, I'm Joyce Coem.</h1>
+      <p class="hero__lede">
+        A final-year BSc Information Technology (Security &amp; Network Engineering) student,
+        passionate about cybersecurity, AI, and building secure technology solutions.
+      </p>
+      <div class="hero__actions">
+        <a routerLink="/cv" class="btn btn--solid">View CV</a>
+        <a href="/assets/Joyce_Coem_CV.pdf" download class="btn">Download CV</a>
+        <a routerLink="/contact" class="btn">Contact Me</a>
+      </div>
+    </div>
+    <div class="hero__photo">
+      <!-- Replace src with your professional photo in src/assets/ -->
+      <img src="/assets/profile-photo.jpg" alt="Joyce Coem" onerror="this.style.display='none'">
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <span class="term-label">ls focus-areas/</span>
+    <div class="grid grid--2">
+      <div class="card" *ngFor="let area of focusAreas">
+        <h3>{{ area.label }}</h3>
+        <p>{{ area.detail }}</p>
+      </div>
+    </div>
+  </div>
+</section>
