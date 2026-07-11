@@ -1,10 +1,18 @@
+# .NET build output
+backend/Portfolio.Api/bin/
+backend/Portfolio.Api/obj/
+backend/Portfolio.Api/publish/
+backend/Portfolio.Api/publish.zip
+backend/Portfolio.Api/package-lock.json
+
+# Angular / Node
+frontend/portfolio-app/node_modules/
+frontend/portfolio-app/dist/
+frontend/portfolio-app/.angular/
+
+# macOS
 .DS_Store
-node_modules/
-.angular/
-dist/
-bin/
-obj/
-.vs/
-*.user
-*.suo
-*.swp
+
+# Editor
+.vscode/
+.idea/
