@@ -12,7 +12,7 @@ import {
 
 // Point this at your deployed ASP.NET Core API.
 // While developing, `ng serve` + `dotnet run` on http://localhost:5000 works out of the box.
-const API_BASE = 'http://localhost:5000/api';
+const API_BASE = 'https://joyce-portfolio-api.azurewebsites.net/api';
 
 @Injectable({ providedIn: 'root' })
 export class PortfolioService {
