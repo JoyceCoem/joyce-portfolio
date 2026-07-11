@@ -1,0 +1,10 @@
+.DS_Store
+node_modules/
+.angular/
+dist/
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.swp
