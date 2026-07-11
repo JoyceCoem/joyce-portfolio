@@ -12,5 +12,6 @@ export class AboutComponent {
     { label: 'Cloud Security', detail: 'Securing the infrastructure that most modern systems now run on' },
     { label: 'Digital Health', detail: 'Applying secure tech thinking to healthcare and wellbeing tools' },
     { label: 'Research', detail: 'Going deeper than coursework, understanding why attacks work, not just how to stop them' }
+    { label: 'Learning while coding', detail: 'Building projects that teach me something new with every line' }
   ];
 }
