@@ -133,3 +133,15 @@
 /Users/joycecoem/Downloads/joyce-portfolio/backend/Portfolio.Api/obj/Debug/net8.0/Portfolio.Api.genruntimeconfig.cache
 /Users/joycecoem/Downloads/joyce-portfolio/backend/Portfolio.Api/obj/Debug/net8.0/ref/Portfolio.Api.dll
 /Users/joycecoem/Downloads/joyce-portfolio/backend/Portfolio.Api/bin/Debug/net8.0/package-lock.json
+/Users/joycecoem/Downloads/joyce-portfolio/backend/Portfolio.Api/bin/Debug/net8.0/publish/publish/web.config
+/Users/joycecoem/Downloads/joyce-portfolio/backend/Portfolio.Api/bin/Debug/net8.0/publish/web.config
+/Users/joycecoem/Downloads/joyce-portfolio/backend/Portfolio.Api/bin/Debug/net8.0/publish/appsettings.json
+/Users/joycecoem/Downloads/joyce-portfolio/backend/Portfolio.Api/bin/Debug/net8.0/publish/package-lock.json
+/Users/joycecoem/Downloads/joyce-portfolio/backend/Portfolio.Api/bin/Debug/net8.0/publish/Portfolio.Api.deps.json
+/Users/joycecoem/Downloads/joyce-portfolio/backend/Portfolio.Api/bin/Debug/net8.0/publish/Portfolio.Api.runtimeconfig.json
+/Users/joycecoem/Downloads/joyce-portfolio/backend/Portfolio.Api/bin/Debug/net8.0/publish/Portfolio.Api.staticwebassets.endpoints.json
+/Users/joycecoem/Downloads/joyce-portfolio/backend/Portfolio.Api/bin/Debug/net8.0/publish/publish/appsettings.json
+/Users/joycecoem/Downloads/joyce-portfolio/backend/Portfolio.Api/bin/Debug/net8.0/publish/publish/package-lock.json
+/Users/joycecoem/Downloads/joyce-portfolio/backend/Portfolio.Api/bin/Debug/net8.0/publish/publish/Portfolio.Api.deps.json
+/Users/joycecoem/Downloads/joyce-portfolio/backend/Portfolio.Api/bin/Debug/net8.0/publish/publish/Portfolio.Api.runtimeconfig.json
+/Users/joycecoem/Downloads/joyce-portfolio/backend/Portfolio.Api/bin/Debug/net8.0/publish/publish/Portfolio.Api.staticwebassets.endpoints.json
